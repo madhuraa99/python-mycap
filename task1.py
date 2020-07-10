@@ -11,13 +11,7 @@ name=input(("\n\nInput the file name: "))
 ext = name.split(".")
 if ext[1]=="py":
     extn="'python'"
-elif ext[1]=="java":
-    extn="'java'"
-elif ext[1]=="c":
-    extn="'c'"
-elif ext[1]=="cpp":
-    extn="'cpp''"
 else:
-    extn="unknown"
+    extn=ext[1]
     
 print("The extension of the file is:", extn)
